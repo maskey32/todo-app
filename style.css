@@ -1,0 +1,380 @@
+
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  background-color: rgb(4, 47, 74);
+}
+
+h1 {
+  text-align: center;
+  background-color: rgb(4, 47, 74);
+  padding: 30px;
+  color: #fff;
+  border-bottom: 6px solid lightskyblue;
+  font-size: 2rem;
+}
+
+h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+form {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+  background-color: rgb(247, 244, 244);
+}
+
+#div-1 {
+  margin-bottom: 1rem;
+}
+
+#search-button {
+  border-radius: 50%;
+}
+
+#search-input {
+  border-radius: 30px;
+  border: 3px solid rgb(4, 47, 74);
+}
+
+#todo-input {
+  border: 3px solid rgb(4, 47, 74);
+}
+
+form button {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  /* color: rgb(4, 47, 74); */
+  color: #fff;
+  /* background-color: #fff; */
+  background-color: rgb(4, 47, 74);
+  border: 3px solid rgb(4, 47, 74);
+  cursor: pointer;
+}
+
+.input-div > input {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+#list-container {
+  /* border: 2px solid yellow; */
+  padding: 20px;
+
+}
+
+.item-div {
+  border: 2px solid lightskyblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.delete-button {
+  background-color: red;
+  padding: 0.2rem;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.edit {
+  background-color: rgb(125, 206, 4);
+  padding: 0.2rem;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.right-pane {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.edit-delete {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.p-item {
+  border: none;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 360px) {
+  h1 {
+    text-align: center;
+    background-color: rgb(4, 47, 74);
+    padding: 30px;
+    color: #fff;
+    border-bottom: 6px solid lightskyblue;
+    font-size: 2rem;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    background-color: rgb(247, 244, 244);
+  }
+  
+  #div-1 {
+    margin-bottom: 1rem;
+  }
+  
+  #search-button {
+    border-radius: 50%;
+  }
+  
+  #search-input {
+    border-radius: 30px;
+    border: 3px solid rgb(4, 47, 74);
+  }
+  
+  #todo-input {
+    border: 3px solid rgb(4, 47, 74);
+  }
+  
+  form button {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    /* color: rgb(4, 47, 74); */
+    color: #fff;
+    /* background-color: #fff; */
+    background-color: rgb(4, 47, 74);
+    border: 3px solid rgb(4, 47, 74);
+    cursor: pointer;
+  }
+  
+  .input-div > input {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  #list-container {
+    padding: 20px;
+  
+  }
+  
+  .item-div {
+    border: 2px solid lightskyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .delete-button {
+    background-color: red;
+    padding: 0.2rem;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .edit {
+    background-color: rgb(125, 206, 4);
+    padding: 0.2rem;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .right-pane {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+  
+  }
+  
+  .edit-delete {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5rem;
+  }
+  
+  .p-item {
+    border: none;
+    font-size: 2rem;
+    margin-left: 2rem;
+    text-align: center;
+  }
+
+  .date {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen 
+and (min-device-width: 320px)
+and (min-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+  h1 {
+    text-align: center;
+    background-color: rgb(4, 47, 74);
+    padding: 30px;
+    color: #fff;
+    border-bottom: 6px solid lightskyblue;
+    font-size: 2rem;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  form {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    background-color: rgb(247, 244, 244);
+  }
+  
+  #div-1 {
+    margin-bottom: 1rem;
+  }
+  
+  #search-button {
+    border-radius: 50%;
+  }
+  
+  #search-input {
+    border-radius: 30px;
+    border: 3px solid rgb(4, 47, 74);
+  }
+  
+  #todo-input {
+    border: 3px solid rgb(4, 47, 74);
+  }
+  
+  form button {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    /* color: rgb(4, 47, 74); */
+    color: #fff;
+    /* background-color: #fff; */
+    background-color: rgb(4, 47, 74);
+    border: 3px solid rgb(4, 47, 74);
+    cursor: pointer;
+  }
+  
+  .input-div > input {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  #list-container {
+    /* border: 2px solid yellow; */
+    padding: 20px;
+  
+  }
+  
+  .item-div {
+    border: 2px solid lightskyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .delete-button {
+    background-color: red;
+    padding: 0.2rem;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .edit {
+    background-color: rgb(125, 206, 4);
+    padding: 0.2rem;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .right-pane {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+  
+  }
+  
+  .edit-delete {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5rem;
+  }
+  
+  .p-item {
+    border: none;
+    font-size: 2rem;
+    margin-left: 2rem;
+    text-align: center;
+  }
+
+  .date {
+    font-size: 1.5rem;
+  }
+}
+
+
